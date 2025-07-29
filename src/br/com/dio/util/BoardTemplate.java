@@ -1,9 +1,32 @@
 package br.com.dio.util;
 
+/**
+ * Classe utilitária que contém o template para exibição do tabuleiro de Sudoku
+ * Fornece uma representação visual clara e organizada do tabuleiro no terminal
+ * 
+ * @author Seu Nome
+ * @version 1.0
+ */
 public final class BoardTemplate {
 
+    /**
+     * Construtor privado para evitar instanciação
+     */
     private BoardTemplate() {}
 
+    /**
+     * Template para exibição do tabuleiro de Sudoku
+     * O template usa formatação com bordas e separadores para criar uma visualização clara
+     * Os números são inseridos nos espaços marcados com %s
+     * 
+     * Estrutura do template:
+     * - Bordas externas com asteriscos (*)
+     * - Separadores de colunas com barras verticais (|)
+     * - Separadores de quadrados 3x3 com asteriscos (*)
+     * - Linhas horizontais para separar linhas
+     * - Coordenadas das colunas na parte superior e inferior
+     * - Coordenadas das linhas na lateral esquerda e direita
+     */
     public final static String BOARD_TEMPLATE =
             """
             *************************************************************************************
